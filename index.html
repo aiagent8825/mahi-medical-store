@@ -1,28 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Mahi Medical Store & Online Center - Medicine, online services, electrical work, house wiring, website services and local assistance in Parora, Purnia, Bihar.">
-<meta name="keywords" content="Mahi Medical Store, Parora, Purnia, medical store, online center, medicine, electrical work, house wiring, website service">
-<meta name="author" content="Mahi Medical Store & Online Center">
+<title>Mahi Medical Store & Online Center</title>
 
-<title>Mahi Medical Store & Online Center | Parora, Purnia</title>
+<meta name="description" content="Mahi Medical Store & Online Center - Medicine, Online Services, Electrical Work, House Wiring, Website Services and Agent Assistance in Purnia, Bihar.">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
     scroll-behavior:smooth;
 }
 
 body{
+    font-family:Arial,Helvetica,sans-serif;
     background:#f5f8fb;
-    color:#17212b;
+    color:#17202a;
     line-height:1.6;
 }
 
@@ -30,52 +27,53 @@ a{
     text-decoration:none;
 }
 
+.container{
+    width:92%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* HEADER */
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:#ffffff;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    background:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.10);
 }
 
 .navbar{
-    max-width:1200px;
-    margin:auto;
-    min-height:72px;
-    padding:10px 20px;
+    min-height:82px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:20px;
 }
 
-.logo{
+.brand{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
 }
 
-.logo-icon{
-    width:45px;
-    height:45px;
-    border-radius:12px;
-    background:#0a9b65;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:24px;
-    font-weight:bold;
+.brand img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    border-radius:50%;
 }
 
-.logo-text h2{
+.brand-text{
+    font-weight:800;
+    color:#087f5b;
     font-size:18px;
-    color:#087a51;
+    line-height:1.15;
 }
 
-.logo-text p{
-    font-size:11px;
-    color:#66727d;
+.brand-text span{
+    display:block;
+    color:#d62828;
+    font-size:14px;
 }
 
 nav{
@@ -85,63 +83,50 @@ nav{
 }
 
 nav a{
-    color:#26343f;
+    color:#263238;
     font-weight:600;
     font-size:14px;
 }
 
 nav a:hover{
-    color:#0a9b65;
+    color:#087f5b;
 }
 
 .call-btn{
-    background:#0a9b65;
-    color:white !important;
+    background:#087f5b;
+    color:white!important;
     padding:10px 16px;
-    border-radius:8px;
+    border-radius:25px;
 }
 
+/* HERO */
 .hero{
-    background:linear-gradient(135deg,#e8fff5,#eef8ff);
-    padding:75px 20px;
+    background:linear-gradient(135deg,#087f5b,#0ca678);
+    color:white;
+    padding:75px 0;
 }
 
-.hero-inner{
-    max-width:1200px;
-    margin:auto;
+.hero-content{
     display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:40px;
+    grid-template-columns:1.4fr .8fr;
     align-items:center;
-}
-
-.badge{
-    display:inline-block;
-    background:#d9f8eb;
-    color:#087a51;
-    padding:7px 13px;
-    border-radius:30px;
-    font-size:13px;
-    font-weight:bold;
-    margin-bottom:15px;
+    gap:40px;
 }
 
 .hero h1{
     font-size:48px;
     line-height:1.12;
     margin-bottom:18px;
-    color:#10212b;
 }
 
 .hero h1 span{
-    color:#0a9b65;
+    color:#ffe066;
 }
 
 .hero p{
-    font-size:18px;
-    color:#52606b;
-    max-width:680px;
-    margin-bottom:24px;
+    font-size:19px;
+    max-width:700px;
+    margin-bottom:25px;
 }
 
 .hero-buttons{
@@ -152,8 +137,8 @@ nav a:hover{
 
 .btn{
     display:inline-block;
-    padding:13px 20px;
-    border-radius:9px;
+    padding:13px 21px;
+    border-radius:8px;
     font-weight:bold;
     transition:.2s;
 }
@@ -162,269 +147,200 @@ nav a:hover{
     transform:translateY(-2px);
 }
 
-.btn-primary{
-    background:#0a9b65;
+.btn-white{
+    background:white;
+    color:#087f5b;
+}
+
+.btn-red{
+    background:#d62828;
     color:white;
 }
 
-.btn-secondary{
-    background:white;
-    color:#087a51;
-    border:2px solid #0a9b65;
+.btn-dark{
+    background:#17202a;
+    color:white;
 }
 
-.hero-card{
-    background:white;
-    border-radius:20px;
-    padding:28px;
-    box-shadow:0 15px 40px rgba(0,0,0,.10);
-}
-
-.hero-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:14px;
-    margin-bottom:18px;
-}
-
-.status{
-    display:flex;
-    justify-content:space-between;
-    gap:10px;
-    margin-top:12px;
-    padding:12px;
-    background:#f3faf7;
-    border-radius:10px;
-}
-
-.status strong{
-    color:#087a51;
-}
-
-section{
-    padding:70px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
+.hero-logo{
     text-align:center;
-    margin-bottom:42px;
 }
 
-.section-title h2{
-    font-size:34px;
-    margin-bottom:8px;
+.hero-logo img{
+    width:280px;
+    max-width:90%;
+    background:white;
+    border-radius:50%;
+    padding:10px;
+    box-shadow:0 15px 40px rgba(0,0,0,.22);
 }
 
-.section-title p{
-    color:#66727d;
+/* INFO BAR */
+.info-bar{
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-top:-25px;
+    position:relative;
+    z-index:2;
+    border-radius:14px;
 }
 
 .info-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    grid-template-columns:repeat(4,1fr);
 }
 
-.info-card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
+.info-item{
+    padding:20px;
+    text-align:center;
+    border-right:1px solid #e9ecef;
 }
 
-.info-card .icon{
-    font-size:30px;
-    margin-bottom:10px;
+.info-item:last-child{
+    border-right:none;
 }
 
-.info-card h3{
-    margin-bottom:7px;
+.info-item strong{
+    display:block;
+    color:#087f5b;
 }
 
-.info-card p{
-    color:#66727d;
+/* SECTIONS */
+section{
+    padding:70px 0;
 }
 
-.services{
-    background:#ffffff;
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
 }
 
-.service-grid{
+.section-title h2{
+    font-size:35px;
+    color:#087f5b;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#68737d;
+}
+
+/* SERVICES */
+.services-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    gap:22px;
 }
 
 .service-card{
-    background:#f8fbfd;
-    border:1px solid #e5edf1;
+    background:white;
     border-radius:16px;
-    overflow:hidden;
+    padding:28px;
+    box-shadow:0 5px 22px rgba(0,0,0,.07);
+    border-top:4px solid #087f5b;
     transition:.25s;
 }
 
 .service-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
 }
 
-.service-card img{
-    width:100%;
-    height:190px;
-    object-fit:cover;
+.service-icon{
+    font-size:42px;
+    margin-bottom:12px;
 }
 
-.service-content{
-    padding:20px;
-}
-
-.service-content h3{
-    color:#087a51;
+.service-card h3{
+    color:#087f5b;
     margin-bottom:8px;
 }
 
-.service-content p{
-    color:#66727d;
-    font-size:14px;
+.service-card p{
+    color:#5d6870;
 }
 
-.service-content ul{
-    margin-top:10px;
-    padding-left:18px;
-    color:#52606b;
-    font-size:14px;
-}
-
-.about{
-    background:#eef8f4;
-}
-
+/* ABOUT */
 .about-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:30px;
-    align-items:center;
 }
 
 .about-box{
     background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    padding:32px;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
-.about-box h2{
-    margin-bottom:14px;
-    color:#087a51;
-}
-
-.about-box p{
-    color:#596773;
-    margin-bottom:12px;
-}
-
-.owner-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    margin-top:20px;
+.about-box h3{
+    color:#087f5b;
+    margin-bottom:15px;
 }
 
 .owner{
-    background:#f7fafb;
-    padding:18px;
-    border-radius:12px;
-}
-
-.owner h3{
-    color:#0a9b65;
-}
-
-.delivery{
-    background:#0a9b65;
-    color:white;
-}
-
-.delivery-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
+    display:flex;
     align-items:center;
+    gap:18px;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
 }
 
-.delivery h2{
-    font-size:35px;
-    margin-bottom:12px;
+.owner:last-child{
+    border-bottom:none;
 }
 
-.delivery p{
-    color:#e9fff6;
+.owner-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#e7f7f1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+}
+
+/* DELIVERY */
+.delivery{
+    background:linear-gradient(135deg,#fff3bf,#ffe8cc);
 }
 
 .delivery-box{
     background:white;
-    color:#17212b;
-    padding:28px;
     border-radius:18px;
+    padding:35px;
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-.delivery-row{
-    display:flex;
-    justify-content:space-between;
-    padding:12px 0;
-    border-bottom:1px solid #e4e9ec;
-}
-
-.delivery-row:last-child{
-    border-bottom:0;
-}
-
-.request{
-    background:#f5f8fb;
-}
-
-.request-grid{
-    display:grid;
-    grid-template-columns:.9fr 1.1fr;
-    gap:30px;
-}
-
-.request-info{
-    background:#0f2630;
-    color:white;
-    padding:30px;
-    border-radius:18px;
-}
-
-.request-info h2{
-    font-size:30px;
+.delivery-box h2{
+    color:#d9480f;
     margin-bottom:15px;
 }
 
-.request-info p{
-    color:#d9e5ea;
-    margin-bottom:18px;
+.delivery-highlight{
+    font-size:24px;
+    font-weight:bold;
+    color:#087f5b;
+    margin:15px 0;
 }
 
-.request-list{
-    list-style:none;
+/* REQUEST */
+.request-section{
+    background:#eefaf6;
 }
 
-.request-list li{
-    margin:12px 0;
-}
-
-.form-box{
+.request-box{
+    max-width:750px;
+    margin:auto;
     background:white;
-    padding:30px;
+    padding:35px;
     border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .form-group{
@@ -441,11 +357,17 @@ section{
 .form-group select,
 .form-group textarea{
     width:100%;
-    padding:12px;
-    border:1px solid #d8e0e5;
+    padding:13px;
+    border:1px solid #d7dde2;
     border-radius:8px;
     font-size:15px;
     outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#087f5b;
 }
 
 .form-group textarea{
@@ -455,211 +377,228 @@ section{
 
 .submit-btn{
     width:100%;
-    border:0;
-    cursor:pointer;
-    background:#0a9b65;
+    border:none;
+    background:#087f5b;
     color:white;
     padding:14px;
-    border-radius:9px;
     font-size:16px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.success-message{
+    display:none;
+    background:#d3f9d8;
+    color:#2b8a3e;
+    padding:15px;
+    margin-bottom:18px;
+    border-radius:8px;
+    text-align:center;
     font-weight:bold;
 }
 
-.reviews{
-    background:white;
-}
-
-.review-grid{
+/* REVIEWS */
+.reviews-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:22px;
 }
 
 .review{
-    background:#f7fafb;
-    padding:25px;
+    background:white;
+    padding:28px;
     border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
 .stars{
-    color:#f5a623;
-    font-size:20px;
+    color:#f59f00;
+    font-size:22px;
     margin-bottom:10px;
 }
 
 .review p{
-    color:#596773;
-    font-style:italic;
+    color:#5d6870;
     margin-bottom:12px;
 }
 
-.review strong{
-    color:#087a51;
-}
-
-.contact{
-    background:#eef8f4;
+/* CONTACT */
+.contact-section{
+    background:#17202a;
+    color:white;
 }
 
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:30px;
+    gap:35px;
 }
 
-.contact-box{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
+.contact-box h3{
+    color:#63e6be;
+    margin-bottom:15px;
 }
 
 .contact-item{
-    padding:15px 0;
-    border-bottom:1px solid #e7ecef;
+    margin:12px 0;
 }
 
-.contact-item:last-child{
-    border-bottom:0;
-}
-
-.contact-item strong{
-    display:block;
-    color:#087a51;
-    margin-bottom:4px;
+.contact-item a{
+    color:#63e6be;
 }
 
 .map-box{
-    min-height:320px;
-    background:#dfe9e5;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:25px;
-}
-
-.map-box-inner{
-    background:white;
-    padding:25px;
+    background:#263238;
     border-radius:15px;
-    max-width:400px;
+    padding:30px;
+    text-align:center;
 }
 
-.map-box-inner h3{
-    margin-bottom:8px;
-    color:#087a51;
+.map-icon{
+    font-size:55px;
+    margin-bottom:12px;
 }
 
-footer{
-    background:#0f2630;
+.map-btn{
+    display:inline-block;
+    background:#d62828;
     color:white;
-    padding:30px 20px;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:15px;
 }
 
-.footer-inner{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    flex-wrap:wrap;
+/* FOOTER */
+footer{
+    background:#101820;
+    color:#cbd3d8;
+    text-align:center;
+    padding:25px 15px;
 }
 
-footer p{
-    color:#c9d7dd;
-    font-size:14px;
+footer strong{
+    color:white;
 }
 
-.float-whatsapp{
+/* WHATSAPP FLOAT */
+.whatsapp-float{
     position:fixed;
     right:20px;
     bottom:20px;
-    z-index:999;
-    width:58px;
-    height:58px;
+    width:60px;
+    height:60px;
     border-radius:50%;
     background:#25d366;
     color:white;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
+    font-size:30px;
     box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:999;
 }
 
+/* MOBILE */
 @media(max-width:900px){
 
     nav{
         display:none;
     }
 
-    .hero-inner,
-    .about-grid,
-    .delivery-grid,
-    .request-grid,
-    .contact-grid{
+    .hero-content{
         grid-template-columns:1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .info-grid{
-        grid-template-columns:1fr;
-    }
-
-    .review-grid{
-        grid-template-columns:1fr;
+        text-align:center;
     }
 
     .hero h1{
-        font-size:40px;
+        font-size:38px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-item:nth-child(2){
+        border-right:none;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .reviews-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
     }
 }
 
 @media(max-width:600px){
 
-    .navbar{
-        padding:10px 14px;
+    .brand img{
+        width:52px;
+        height:52px;
     }
 
-    .logo-text h2{
-        font-size:15px;
+    .brand-text{
+        font-size:14px;
+    }
+
+    .brand-text span{
+        font-size:11px;
     }
 
     .hero{
-        padding:50px 15px;
-    }
-
-    section{
-        padding:55px 15px;
+        padding:50px 0;
     }
 
     .hero h1{
-        font-size:34px;
+        font-size:31px;
     }
 
     .hero p{
         font-size:16px;
     }
 
-    .service-grid{
+    .hero-logo img{
+        width:210px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .info-item{
+        padding:15px 8px;
+        font-size:13px;
+        border-bottom:1px solid #eee;
+    }
+
+    .services-grid{
         grid-template-columns:1fr;
     }
 
-    .owner-grid{
-        grid-template-columns:1fr;
+    section{
+        padding:50px 0;
     }
 
     .section-title h2{
         font-size:28px;
     }
 
-    .delivery h2{
-        font-size:28px;
+    .request-box,
+    .about-box,
+    .delivery-box{
+        padding:22px;
     }
 }
 </style>
@@ -667,14 +606,15 @@ footer p{
 
 <body>
 
+<!-- HEADER -->
 <header>
-<div class="navbar">
+<div class="container navbar">
 
-    <a href="#home" class="logo">
-        <div class="logo-icon">M</div>
-        <div class="logo-text">
-            <h2>Mahi Medical Store</h2>
-            <p>& Online Center</p>
+    <a href="#home" class="brand">
+        <img src="mahi-logo.png" alt="Mahi Medical Store & Online Center Logo">
+        <div class="brand-text">
+            Mahi Medical Store
+            <span>& Online Center</span>
         </div>
     </a>
 
@@ -684,7 +624,7 @@ footer p{
         <a href="#about">About</a>
         <a href="#request">Request</a>
         <a href="#contact">Contact</a>
-        <a class="call-btn" href="tel:7856008085">Call Now</a>
+        <a class="call-btn" href="tel:7856008085">📞 Call Now</a>
     </nav>
 
 </div>
@@ -693,62 +633,39 @@ footer p{
 
 <!-- HERO -->
 <section class="hero" id="home">
-
-<div class="hero-inner">
+<div class="container hero-content">
 
     <div>
-
-        <span class="badge">OPEN TODAY • 08:00 AM – 08:00 PM</span>
-
         <h1>
             Mahi Medical Store
             <span>& Online Center</span>
         </h1>
 
         <p>
-            आपकी जरूरत की दवाइयों से लेकर Online Services,
-            Electrical Work, House Wiring, Website Service और
-            स्थानीय सहायता तक — एक ही जगह पर।
+            Medicine, Online Services, Electrical Work, House Wiring,
+            Website Services and Agent Assistance — सब कुछ एक ही जगह।
         </p>
 
         <div class="hero-buttons">
-
-            <a class="btn btn-primary" href="tel:7856008085">
+            <a class="btn btn-white" href="tel:7856008085">
                 📞 Call Now
             </a>
 
-            <a class="btn btn-secondary"
-               href="https://wa.me/917856008085?text=Hello%20Mahi%20Medical%20Store,%20mujhe%20information%20chahiye."
+            <a class="btn btn-red"
+               href="https://wa.me/917856008085?text=Hello%20Mahi%20Medical%20Store%20%26%20Online%20Center"
                target="_blank">
                 💬 WhatsApp
             </a>
 
-            <a class="btn btn-secondary" href="#request">
+            <a class="btn btn-dark" href="#request">
                 📝 Online Request
             </a>
-
         </div>
-
     </div>
 
-
-    <div class="hero-card">
-
-        <img
-        src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80"
-        alt="Medical Store">
-
-        <h3>Local Service • Trusted Assistance</h3>
-
-        <p>
-            Milki Tola, Parora, Purnia, Bihar
-        </p>
-
-        <div class="status">
-            <span>Business Hours</span>
-            <strong>08 AM – 08 PM</strong>
-        </div>
-
+    <div class="hero-logo">
+        <img src="mahi-logo.png"
+             alt="Mahi Medical Store Service Logo">
     </div>
 
 </div>
@@ -756,592 +673,510 @@ footer p{
 
 
 <!-- QUICK INFO -->
-<section>
-
-<div class="container">
-
-<div class="section-title">
-    <h2>हमारे बारे में</h2>
-    <p>स्थानीय ग्राहकों के लिए कई जरूरी सेवाएँ एक ही जगह</p>
-</div>
-
+<div class="container info-bar">
 <div class="info-grid">
 
-    <div class="info-card">
-        <div class="icon">💊</div>
-        <h3>Medicine</h3>
-        <p>
-            आपकी जरूरत के अनुसार उपलब्ध दवाइयों और
-            मेडिकल प्रोडक्ट्स के लिए संपर्क करें।
-        </p>
+    <div class="info-item">
+        🕐
+        <strong>Opening Hours</strong>
+        08:00 AM - 08:00 PM
     </div>
 
-    <div class="info-card">
-        <div class="icon">🕐</div>
-        <h3>Opening Hours</h3>
-        <p>
-            रोजाना सुबह <strong>08:00 AM</strong> से
-            शाम <strong>08:00 PM</strong> तक।
-        </p>
+    <div class="info-item">
+        💊
+        <strong>Medicine</strong>
+        All Medicines
     </div>
 
-    <div class="info-card">
-        <div class="icon">🚚</div>
-        <h3>Home Delivery</h3>
-        <p>
-            500 मीटर तक FREE delivery।
-            उसके बाद ₹20 प्रति किलोमीटर।
-        </p>
+    <div class="info-item">
+        🚚
+        <strong>Home Delivery</strong>
+        500m Free
+    </div>
+
+    <div class="info-item">
+        📍
+        <strong>Location</strong>
+        Purnia, Bihar
     </div>
 
 </div>
-
 </div>
-</section>
 
 
 <!-- SERVICES -->
-<section class="services" id="services">
-
+<section id="services">
 <div class="container">
 
 <div class="section-title">
-    <h2>हमारी Services</h2>
-    <p>Medical से लेकर digital और electrical services तक</p>
+    <h2>Our Services</h2>
+    <p>हमारी प्रमुख सेवाएँ</p>
 </div>
 
+<div class="services-grid">
 
-<div class="service-grid">
+    <div class="service-card">
+        <div class="service-icon">💊</div>
+        <h3>Medicine Department</h3>
+        <p>
+            अलग-अलग प्रकार की medicines और medical products
+            उपलब्ध कराने की सुविधा।
+        </p>
+    </div>
 
+    <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Online Services</h3>
+        <p>
+            Online forms, applications और अन्य digital
+            services में सहायता।
+        </p>
+    </div>
 
-<div class="service-card">
+    <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Electrical Work</h3>
+        <p>
+            Electrical work और electrical related services
+            के लिए सहायता।
+        </p>
+    </div>
 
-<img
-src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=900&q=80"
-alt="Medicine">
+    <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>House Wiring</h3>
+        <p>
+            घर की wiring और electrical installation
+            services।
+        </p>
+    </div>
 
-<div class="service-content">
+    <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Website Services</h3>
+        <p>
+            Business और local services के लिए
+            website बनाने में सहायता।
+        </p>
+    </div>
 
-<h3>💊 Medicine Department</h3>
-
-<p>
-Medical store से संबंधित products और
-दवाइयों के लिए संपर्क करें।
-</p>
-
-<ul>
-<li>Medicine & Medical Products</li>
-<li>Medicine Request</li>
-<li>Local Assistance</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
-alt="Online Services">
-
-<div class="service-content">
-
-<h3>💻 Online Services</h3>
-
-<p>
-Online forms और digital काम में सहायता।
-</p>
-
-<ul>
-<li>Online Form Assistance</li>
-<li>Application Assistance</li>
-<li>Digital Services</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80"
-alt="Electrical Work">
-
-<div class="service-content">
-
-<h3>⚡ Electrical Work</h3>
-
-<p>
-Electrical काम के लिए local assistance।
-</p>
-
-<ul>
-<li>Electrical Work</li>
-<li>Electrical Repair Assistance</li>
-<li>Local Service</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80"
-alt="House Wiring">
-
-<div class="service-content">
-
-<h3>🏠 House Wiring</h3>
-
-<p>
-घर की wiring और electrical installation
-से संबंधित काम।
-</p>
-
-<ul>
-<li>House Wiring</li>
-<li>Electrical Installation</li>
-<li>Service Assistance</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-alt="Website Service">
-
-<div class="service-content">
-
-<h3>🌐 Website Service</h3>
-
-<p>
-छोटे business और local services के लिए
-website बनाने में सहायता।
-</p>
-
-<ul>
-<li>Business Website</li>
-<li>Website Setup</li>
-<li>Online Presence</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service-card">
-
-<img
-src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
-alt="Agent Assistance">
-
-<div class="service-content">
-
-<h3>🤝 Agent & Assistant</h3>
-
-<p>
-स्थानीय काम और उपलब्ध सेवाओं के लिए
-agent/assistance support।
-</p>
-
-<ul>
-<li>Local Assistance</li>
-<li>Service Guidance</li>
-<li>Customer Support</li>
-</ul>
-
-</div>
-</div>
-
+    <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3>Agent & Assistance</h3>
+        <p>
+            विभिन्न कामों में agent assistance और
+            customer support।
+        </p>
+    </div>
 
 </div>
 </div>
 </section>
 
 
-<!-- ABOUT / OWNERS -->
-<section class="about" id="about">
-
+<!-- ABOUT -->
+<section id="about">
 <div class="container">
+
+<div class="section-title">
+    <h2>About Mahi Medical Store</h2>
+    <p>आपकी स्थानीय multi-service सुविधा</p>
+</div>
 
 <div class="about-grid">
 
-<div class="about-box">
+    <div class="about-box">
 
-<h2>Mahi Medical Store & Online Center</h2>
+        <h3>🏪 हमारे बारे में</h3>
 
-<p>
-हमारा उद्देश्य स्थानीय लोगों को जरूरी
-Medical, Online, Electrical और Digital
-services एक ही जगह उपलब्ध कराना है।
-</p>
+        <p>
+            <strong>Mahi Medical Store & Online Center</strong>
+            Milki Tola, Parora, Purnia, Bihar में स्थित
+            एक local multi-service center है।
+        </p>
 
-<p>
-ग्राहक किसी भी service के लिए पहले
-Call या WhatsApp करके जानकारी ले सकते हैं।
-</p>
+        <br>
 
-<p>
-<strong>Address:</strong><br>
-Milki Tola, Parora<br>
-Ward No. 05<br>
-P.O. — Parora<br>
-P.S. — K. Nagar<br>
-District — Purnia<br>
-Bihar — 854304, India
-</p>
+        <p>
+            यहाँ medical products के साथ-साथ online services,
+            electrical work, house wiring, website services
+            और अन्य assistance उपलब्ध कराई जाती है।
+        </p>
+
+        <br>
+
+        <p>
+            हमारा उद्देश्य लोगों को अलग-अलग छोटे-बड़े कामों
+            के लिए एक ही स्थान पर सुविधाजनक सेवा देना है।
+        </p>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <h3>👨‍💼 Our Team</h3>
+
+        <div class="owner">
+
+            <div class="owner-icon">💊</div>
+
+            <div>
+                <strong>Mr. Uttam Kumar</strong>
+                <p>Medicine Department</p>
+            </div>
+
+        </div>
+
+        <div class="owner">
+
+            <div class="owner-icon">🧑‍💻</div>
+
+            <div>
+                <strong>Mr. Sintu Kumar</strong>
+                <p>All Department</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-
-
-<div class="about-box">
-
-<h2>Our Team</h2>
-
-<div class="owner-grid">
-
-<div class="owner">
-<h3>Mr. Uttam Kumar</h3>
-<p>Medicine Department</p>
-</div>
-
-<div class="owner">
-<h3>Mr. Sintu Kumar</h3>
-<p>All Department</p>
-</div>
-
-</div>
-
-<br>
-
-<p>
-Business Hours:
-<strong>08:00 AM – 08:00 PM</strong>
-</p>
-
-</div>
-
-</div>
-
 </div>
 </section>
 
 
 <!-- DELIVERY -->
 <section class="delivery">
-
 <div class="container">
-
-<div class="delivery-grid">
-
-<div>
-
-<h2>Home Delivery Available 🚚</h2>
-
-<p>
-घर बैठे medicine request करने के लिए
-WhatsApp या Call करें।
-</p>
-
-<br>
-
-<a class="btn btn-secondary"
-href="https://wa.me/917856008085?text=Hello%20Mahi%20Medical%20Store,%20mujhe%20home%20delivery%20chahiye."
-target="_blank">
-WhatsApp for Delivery
-</a>
-
-</div>
-
 
 <div class="delivery-box">
 
-<div class="delivery-row">
-<span>Up to 500 meters</span>
-<strong>FREE</strong>
+    <h2>🚚 Home Delivery Available</h2>
+
+    <p>
+        अपने घर से order/request करें और उपलब्ध service
+        के बारे में जानकारी प्राप्त करें।
+    </p>
+
+    <div class="delivery-highlight">
+        500 Meter तक FREE Delivery
+    </div>
+
+    <p>
+        500 Meter से अधिक दूरी पर
+        <strong>₹20 / KM</strong> delivery charge लागू होगा।
+    </p>
+
+    <p style="margin-top:12px;">
+        ⏰ Delivery / Service Timing:
+        <strong>08:00 AM - 08:00 PM</strong>
+    </p>
+
+    <br>
+
+    <a class="btn btn-red"
+       href="https://wa.me/917856008085?text=Home%20Delivery%20Request"
+       target="_blank">
+       💬 WhatsApp पर Request करें
+    </a>
+
 </div>
 
-<div class="delivery-row">
-<span>Beyond 500 meters</span>
-<strong>₹20 / KM</strong>
-</div>
-
-<div class="delivery-row">
-<span>Delivery Time</span>
-<strong>08 AM – 08 PM</strong>
-</div>
-
-</div>
-
-</div>
 </div>
 </section>
 
 
 <!-- ONLINE REQUEST -->
-<section class="request" id="request">
-
+<section class="request-section" id="request">
 <div class="container">
 
 <div class="section-title">
-<h2>Online Request</h2>
-<p>Form भरें और आपकी request WhatsApp पर भेज दी जाएगी</p>
+    <h2>Online Request</h2>
+    <p>अपनी आवश्यकता हमें online भेजें</p>
 </div>
 
+<div class="request-box">
 
-<div class="request-grid">
+    <div id="successMessage" class="success-message">
+        ✅ आपकी request प्राप्त हो गई है। हमारी टीम जल्द संपर्क करेगी।
+    </div>
 
-<div class="request-info">
+    <form id="requestForm">
 
-<h2>हमसे संपर्क करें</h2>
+        <div class="form-group">
+            <label>आपका नाम</label>
+            <input
+                type="text"
+                id="customerName"
+                placeholder="अपना नाम लिखें"
+                required>
+        </div>
 
-<p>
-Medicine, delivery, online service,
-electrical work या website service के लिए
-अपनी requirement भेजें।
-</p>
+        <div class="form-group">
+            <label>मोबाइल नंबर</label>
+            <input
+                type="tel"
+                id="customerMobile"
+                placeholder="अपना मोबाइल नंबर"
+                required>
+        </div>
 
-<ul class="request-list">
+        <div class="form-group">
+            <label>किस service की जरूरत है?</label>
 
-<li>📞 7856008085</li>
-<li>📞 8825205640</li>
-<li>🕐 08:00 AM – 08:00 PM</li>
-<li>📍 Milki Tola, Parora, Purnia</li>
+            <select id="service" required>
 
-</ul>
+                <option value="">
+                    Select Service
+                </option>
+
+                <option>
+                    Medicine
+                </option>
+
+                <option>
+                    Online Form / Application
+                </option>
+
+                <option>
+                    Electrical Work
+                </option>
+
+                <option>
+                    House Wiring
+                </option>
+
+                <option>
+                    Website Service
+                </option>
+
+                <option>
+                    Agent Assistance
+                </option>
+
+                <option>
+                    Home Delivery
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>अपनी requirement लिखें</label>
+
+            <textarea
+                id="requirement"
+                placeholder="आपको किस काम की जरूरत है?"
+                required></textarea>
+
+        </div>
+
+        <button
+            type="submit"
+            id="submitButton"
+            class="submit-btn">
+
+            📩 Request भेजें
+
+        </button>
+
+    </form>
 
 </div>
-
-
-<div class="form-box">
-
-<form id="requestForm">
-
-<div class="form-group">
-<label>Your Name</label>
-<input type="text" id="name" placeholder="अपना नाम" required>
-</div>
-
-
-<div class="form-group">
-<label>Mobile Number</label>
-<input type="tel" id="mobile" placeholder="Mobile Number" required>
-</div>
-
-
-<div class="form-group">
-<label>Select Service</label>
-
-<select id="service" required>
-
-<option value="">Select Service</option>
-<option>Medicine</option>
-<option>Home Delivery</option>
-<option>Online Services</option>
-<option>Electrical Work</option>
-<option>House Wiring</option>
-<option>Website Service</option>
-<option>Agent Assistance</option>
-<option>Other</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Your Requirement</label>
-
-<textarea
-id="message"
-placeholder="अपनी requirement लिखें..."
-required></textarea>
-
-</div>
-
-
-<button class="submit-btn" type="submit">
-Send Request on WhatsApp
-</button>
-
-</form>
-
-</div>
-
-</div>
-
 </div>
 </section>
 
 
 <!-- REVIEWS -->
-<section class="reviews">
-
+<section>
 <div class="container">
 
 <div class="section-title">
-
-<h2>Customer Reviews</h2>
-
-<p>
-हम अपने ग्राहकों की अच्छी सेवा देने की कोशिश करते हैं।
-</p>
-
+    <h2>Customer Reviews</h2>
+    <p>हमारे customers का feedback</p>
 </div>
 
+<div class="reviews-grid">
 
-<div class="review-grid">
+    <div class="review">
 
-<div class="review">
+        <div class="stars">
+            ★★★★★
+        </div>
 
-<div class="stars">★★★★★</div>
+        <p>
+            "बहुत अच्छी service और अच्छा व्यवहार।"
+        </p>
 
-<p>
-“बहुत अच्छी service और local customers के लिए
-काफी useful center.”
-</p>
+        <strong>Local Customer</strong>
 
-<strong>Local Customer</strong>
+    </div>
+
+
+    <div class="review">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            "एक ही जगह पर कई प्रकार की services मिल जाती हैं।"
+        </p>
+
+        <strong>Local Customer</strong>
+
+    </div>
+
+
+    <div class="review">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            "Service काफी helpful और convenient है।"
+        </p>
+
+        <strong>Local Customer</strong>
+
+    </div>
 
 </div>
-
-
-<div class="review">
-
-<div class="stars">★★★★★</div>
-
-<p>
-“Medicine और online काम के लिए आसानी से
-संपर्क किया जा सकता है.”
-</p>
-
-<strong>Local Customer</strong>
-
-</div>
-
-
-<div class="review">
-
-<div class="stars">★★★★★</div>
-
-<p>
-“Staff helpful है और कई services एक ही जगह
-मिल जाती हैं.”
-</p>
-
-<strong>Local Customer</strong>
-
-</div>
-
-</div>
-
 </div>
 </section>
 
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="contact-section" id="contact">
 
 <div class="container">
 
 <div class="section-title">
+    <h2 style="color:#63e6be;">
+        Contact Us
+    </h2>
 
-<h2>Contact & Location</h2>
-
-<p>हमसे Call या WhatsApp पर संपर्क करें</p>
-
+    <p style="color:#cbd3d8;">
+        हमसे सीधे संपर्क करें
+    </p>
 </div>
 
 
 <div class="contact-grid">
 
+    <div class="contact-box">
 
-<div class="contact-box">
+        <h3>📍 Address</h3>
 
-<div class="contact-item">
-<strong>📞 Phone</strong>
-<a href="tel:7856008085">7856008085</a><br>
-<a href="tel:8825205640">8825205640</a>
-</div>
+        <div class="contact-item">
+            Milki Tola, Parora
+        </div>
 
+        <div class="contact-item">
+            Ward No. 05
+        </div>
 
-<div class="contact-item">
-<strong>💬 WhatsApp</strong>
+        <div class="contact-item">
+            P.O. — Parora
+        </div>
 
-<a
-href="https://wa.me/917856008085"
-target="_blank">
-WhatsApp: 7856008085
-</a>
+        <div class="contact-item">
+            P.S. — K. Nagar
+        </div>
 
-<br>
+        <div class="contact-item">
+            District — Purnia
+        </div>
 
-<a
-href="https://wa.me/918825205640"
-target="_blank">
-WhatsApp: 8825205640
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<strong>📍 Address</strong>
-
-Milki Tola, Parora<br>
-Ward No. 05<br>
-P.O. — Parora<br>
-P.S. — K. Nagar<br>
-District — Purnia<br>
-Bihar — 854304, India
-
-</div>
+        <div class="contact-item">
+            Bihar — 854304, India
+        </div>
 
 
-<div class="contact-item">
+        <h3 style="margin-top:25px;">
+            📞 Phone
+        </h3>
 
-<strong>🕐 Business Hours</strong>
+        <div class="contact-item">
+            <a href="tel:7856008085">
+                7856008085
+            </a>
+        </div>
 
-08:00 AM – 08:00 PM
+        <div class="contact-item">
+            <a href="tel:8825205640">
+                8825205640
+            </a>
+        </div>
 
-</div>
 
-</div>
+        <h3 style="margin-top:25px;">
+            💬 WhatsApp
+        </h3>
+
+        <div class="contact-item">
+
+            <a
+              href="https://wa.me/917856008085"
+              target="_blank">
+
+              WhatsApp: 7856008085
+
+            </a>
+
+        </div>
+
+        <div class="contact-item">
+
+            <a
+              href="https://wa.me/918825205640"
+              target="_blank">
+
+              WhatsApp: 8825205640
+
+            </a>
+
+        </div>
+
+    </div>
 
 
-<div class="map-box">
+    <div class="map-box">
 
-<div class="map-box-inner">
+        <div class="map-icon">
+            📍
+        </div>
 
-<h3>📍 Google Maps Location</h3>
+        <h3>
+            Find Us on Google Maps
+        </h3>
 
-<p>
-Exact shop location जल्द ही यहाँ जोड़ी जाएगी।
-</p>
+        <p style="margin-top:10px;color:#cbd3d8;">
+            Mahi Medical Store & Online Center
+        </p>
 
-<br>
+        <p style="margin-top:8px;color:#adb5bd;">
+            Milki Tola, Parora, Purnia, Bihar
+        </p>
 
-<a
-class="btn btn-primary"
-href="https://www.google.com/maps"
-target="_blank">
-Open Google Maps
-</a>
+        <a
+          class="map-btn"
+          href="https://www.google.com/maps/search/?api=1&query=25.8104594,87.4003337"
+          target="_blank">
 
-</div>
+          📍 Open Live Location
 
-</div>
+        </a>
 
+    </div>
 
 </div>
 
@@ -1352,69 +1187,112 @@ Open Google Maps
 <!-- FOOTER -->
 <footer>
 
-<div class="footer-inner">
+    <p>
+        © 2026
+        <strong>
+            Mahi Medical Store & Online Center
+        </strong>
+    </p>
 
-<div>
-
-<h3>Mahi Medical Store & Online Center</h3>
-
-<p>
-Milki Tola, Parora, Purnia, Bihar - 854304
-</p>
-
-</div>
-
-
-<div>
-
-<p>
-© 2026 Mahi Medical Store & Online Center
-</p>
-
-<p>
-All Rights Reserved.
-</p>
-
-</div>
-
-</div>
+    <p style="margin-top:5px;">
+        Milki Tola, Parora, Purnia, Bihar — 854304
+    </p>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- WHATSAPP FLOAT -->
 <a
-class="float-whatsapp"
-href="https://wa.me/917856008085?text=Hello%20Mahi%20Medical%20Store,%20mujhe%20information%20chahiye."
-target="_blank"
-title="WhatsApp">
-💬
+    class="whatsapp-float"
+    href="https://wa.me/917856008085"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    💬
+
 </a>
 
 
 <script>
 
-document.getElementById("requestForm").addEventListener("submit", function(e){
+const requestForm = document.getElementById("requestForm");
 
-    e.preventDefault();
+const successMessage =
+    document.getElementById("successMessage");
 
-    const name = document.getElementById("name").value;
-    const mobile = document.getElementById("mobile").value;
-    const service = document.getElementById("service").value;
-    const message = document.getElementById("message").value;
+const submitButton =
+    document.getElementById("submitButton");
+
+
+requestForm.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("customerName").value.trim();
+
+    const mobile =
+        document.getElementById("customerMobile").value.trim();
+
+    const service =
+        document.getElementById("service").value;
+
+    const requirement =
+        document.getElementById("requirement").value.trim();
+
+
+    if(!name || !mobile || !service || !requirement){
+
+        alert("कृपया सभी जानकारी भरें।");
+
+        return;
+    }
+
+
+    successMessage.style.display = "block";
+
+    submitButton.disabled = true;
+
+    submitButton.innerText =
+        "✅ Request Received";
+
 
     const whatsappMessage =
         "Hello Mahi Medical Store & Online Center,%0A%0A" +
-        "*Online Request*%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Mobile: " + encodeURIComponent(mobile) + "%0A" +
-        "Service: " + encodeURIComponent(service) + "%0A" +
-        "Requirement: " + encodeURIComponent(message);
 
-    window.open(
-        "https://wa.me/917856008085?text=" + whatsappMessage,
-        "_blank"
-    );
+        "Name: " + encodeURIComponent(name) + "%0A" +
+
+        "Mobile: " + encodeURIComponent(mobile) + "%0A" +
+
+        "Service: " + encodeURIComponent(service) + "%0A" +
+
+        "Requirement: " +
+        encodeURIComponent(requirement);
+
+
+    setTimeout(function(){
+
+        window.open(
+            "https://wa.me/917856008085?text=" +
+            whatsappMessage,
+            "_blank"
+        );
+
+    },500);
+
+
+    setTimeout(function(){
+
+        requestForm.reset();
+
+        successMessage.style.display = "none";
+
+        submitButton.disabled = false;
+
+        submitButton.innerText =
+            "📩 Request भेजें";
+
+    },4000);
 
 });
 
